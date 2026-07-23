@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Service</title>
+</head>
+<body>
+
+<h1>Library Book Availability</h1>
+
+<form action="/check" method="post">
+    Enter Book ID:
+    <input type="number" name="book" required>
+    <input type="submit" value="Check">
+</form>
+
+<br>
+
+{% if result %}
+    <h3>{{ result }}</h3>
+{% endif %}
+
+</body>
+</html>
